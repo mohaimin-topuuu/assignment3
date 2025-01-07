@@ -28,9 +28,11 @@
                 card2: "#EFDA6E",
                 card3: "#A4DAC3",
                 card4: "#77AAEA",
-                'font-secondary': '#737373',
                 rintario_text_color: '#737373',
 
+              },
+              backgroundImage: {
+                paper: "url('./assets/bg.jpg')",
               }
             }
           }
@@ -246,10 +248,105 @@
 
 
   </section>
+  <!-- Let's Discuss Area starts -->
+  <section class="discuss bg-paper bg-cover w-full flex items-center justify-center h-screen md:grid md:place-items-center">
+    <div class="container mx-auto">
+      <div class="discuss-text text-center">
+        <h2 class="text-3xl py-8 font-bold">Let's Discuss Next Project</h2>
+        <p class="text-black">
+          The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <div class="discuss_form grid lg:grid-cols-2 grid-rows-1">
+        <input type="text" placeholder="First Name*" class="input input-bordered w-10/12 rounded-xl my-3 " />
+        <input type="text" placeholder="Last Name*" class="input input-bordered w-10/12  my-3 " />
+        <input type="text" placeholder="Phone Number*" class="input input-bordered w-10/12 my-3 " />
+        <input type="text" placeholder="Email Number*" class="input input-bordered w-10/12 my-3 " />
+        
+      </div>
+      <input type="text" placeholder="Write Your Message" class="input input-bordered max-w-full w-11/12 my-4 py-16" />
+      <div class="send-mail-button text-center">
+        <button class="px-6 py-2 bg-rintario_radium rounded-md my-8 font-bold">Send Mail<i class="fa-solid fa-arrow-right -rotate-45 text-white ml-4 bg-black p-2 rounded-full"></i></button>
+        
+      </div>
+  
+    </div>
+
+  </section>
+  <!-- Bonus Area Starts -->
+  <section class="carousel-area bg-rintario_bg_secondary py-8">
+    <div class="container mx-auto">
+      <div class="carousel-area-text">
+        <h4 class="text-4xl text-center font-bold py-8">Some Of Our Best Designs</h4>
+      </div>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="./assets/house1.jpg"
+            class="w-full min-h-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="./assets/house2.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="./assets/house3.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="./assets/house4.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    
 
 
 
-  <footer class="footer-area">
+  </section>
+
+<!-- Footer area starts -->
+  <footer class="footer-area bg-black  text-center py-12">
+    <div class="container mx-auto">
+      <div class="footer-logo">
+        <a href="#"><i class="fa-solid fa-arrow-right bg-rintario_radium p-2 text-black rounded-full -rotate-45"></i></a>
+        <a class="font-bold text-2xl ml-2 text-white">Rintario</a>
+        <p class="py-8 text-rintario_text_color">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <div class="footer-links grid grid-row lg:grid-cols-5 gap-4 py-8 text-white">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blogs</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="button hidden lg:block text-center mt-8">
+          <a class="bg-rintario_radium  px-6 py-4 rounded-xl "  href="#">
+          <h3 class="inline-block text-black font-bold">Book a Consult</h3>
+          <i class="fa-solid fa-arrow-right -rotate-45 text-white ml-4 bg-black p-2 rounded-full"></i>
+        </a>
+      </div>
+    </div>
+    
+
 
   </footer>
 
