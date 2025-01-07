@@ -21,21 +21,175 @@
               colors: {
                 clifford: '#da373d',
                 rintario_radium: '#abef5f',
-                rintario_bg_color: '#f5f5f5',
+                rintario_bg_color: '#fafafa',
+                btn_light_radium: '#ABEF5F80',
+                rintario_bg_secondary: '#f4f4f4',
+                card1: "#E7C1D3",
+                card2: "#EFDA6E",
+                card3: "#A4DAC3",
+                card4: "#77AAEA",
+                'bg-image': "url('/img/hero-pattern.svg')",
                 'font-secondary': '#737373',
+
               }
             }
           }
         }
       </script>
       <style>
-          font-manrope {
+          .font-manrope {
             font-family: "Manrope", serif;
           }
       </style>
 </head>
+<body class="font-manrope">
+  <header class="header-area bg-rintario_bg_color pt-8">
+    <div class="navbar container mx-auto">
+      <div class="navbar-start">
+        <a href="#"><i class="fa-solid fa-arrow-right bg-rintario_radium p-2 text-black rounded-full -rotate-45"></i></a>
+        <a class="font-bold text-2xl ml-2">Rintario</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="font-bold hover:bg-rintario_radium" href="#">Home</a></li>
+          <li><a class="hover:bg-rintario_radium" href="#">Services</a></li>
+          <li><a class="hover:bg-rintario_radium" href="#">Portfolio</a></li>
+          <li><a class="hover:bg-rintario_radium" href="#">Blog</a></li>
+          <li><a class="hover:bg-rintario_radium" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex">
+        <div class="icons w-6/12 hidden text-center lg:block">
+          <a class="mr-4" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a class="mr-4" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="button hidden lg:block ml-8 bg-rintario_radium px-6 py-4 rounded-xl text-center">
+          <a href="#">
+            <h3 class="inline-block text-black font-bold">Book a Consult</h3>
+            <i class="fa-solid fa-arrow-right -rotate-45 text-white ml-4 bg-black p-2 rounded-full"></i>
+          </a>
+        </div>
+        <div class="navbar  justify-end lg:hidden">
+          <div class="dropdown dropdown-left">
+            <div tabindex="0" role="button" class="btn m-1"><i class="fa-solid fa-bars"></i></div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-area bg-rintario_bg_color pb-8 overflow-hidden">
+    <div class="hero  container mx-auto  min-h-screen">
+      <div class="hero-content text-center">
+        <div>
+          <img class="items-center mx-auto" src="./assets/banner.png" alt="A beautiful house photo">
+          <h1 class="text-4xl font-bold ">A barn house of this design has a <br>striking appearance</h1>
+          <p class="py-6">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+          </p>
+          <button class="btn bg-btn_light_radium rounded-lg hover:bg-rintario_radium font-bold px-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-rintario_radium hover:bg-btn_light_radium"></i></button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="about-us bg-rintario_bg_secondary py-8">
+    <div class="about-us-heading-content px-2 my-8">
+      <h4 class="ml-2 text-4xl text-center font-bold">About Us</h4>
+    </div>
+    <div class="flex w-full flex-col lg:flex-row">
+      <div class="card rounded-box grid flex-grow place-items-center">
+
+        <div class="about-us-main">
+          <div class="about-us-main-text relative">
+            <img class="absolute -inset-14" src="./assets/Vector.png" alt="A vector image">
+            <h2 class="text-3xl font-bold py-4">We design thoughtful, <br> liveable spaces</h2>
+            <p>The barn house captivates with its blend of rustic charm and <br>
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <div class="about-us-frist-card bg-white rounded-md my-4">
+            <div class="card card-side">
+              <figure class="ml-8">
+                <img
+                  src="./assets/commercial.png"
+                  alt="Commercial" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-bold">Commercial</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-us-second-card bg-white rounded-md my-4">
+            <div class="card card-side">
+              <figure class="ml-8">
+                <img
+                  src="./assets/residential.png"
+                  alt="Residential" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title font-bold">Residential</h2>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
 
 
+        </div>
+
+      </div>
+
+      <div class="card rounded-box grid flex-grow place-items-center mt-8">
+        <img class="w-10/12 min-h-6" src="./assets/Rectangle.png" alt="A barn house">
+      </div>
+    </div>
+  </section>
+  <section class="how-we-work bg-rintario_bg_secondary py-12">
+    <div class="container mx-auto">
+      <div class="how-we-work-text py-10 text-center">
+        <h2 class="text-3xl font-bold py-4">Our Work Process</h2>
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <div class="card-grid grid lg:grid-cols-4 grid-row gap-4">
+        <div class="card-grid-1 bg-card1 p-4 rounded-md">
+          <img src="./assets/concept.png" alt="Concept">
+          <h3 class="text-xl font-bold py-4">Concept</h3>
+          <p class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="card-grid-1 bg-card2  p-4 rounded-md">
+          <img src="./assets/flow-chart.png" alt="Design">
+          <h3 class="text-xl font-bold py-4">Supervision</h3>
+          <p  class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="card-grid-1 bg-card3  p-4 rounded-md">
+          <img src="./assets/vision.png" alt="Vision">
+          <h3 class="text-xl font-bold py-4">Budget Planning</h3>
+          <p  class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="card-grid-1 bg-card4  p-4 rounded-md">
+          <img src="./assets/budget-planning.png" alt="Budget Planning">
+          <h3 class="text-xl font-bold py-4">Design Process</h3>
+          <p  class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+  <footer class="footer-area">
+
+  </footer>
 
 
 </body>
